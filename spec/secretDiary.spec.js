@@ -20,9 +20,11 @@ describe("Diary Test", () => {
         const expected = [{text: 'Coding'}];
         mySecretDiary.unlock();
         const result = mySecretDiary.addEntry('Coding');
+        console.log('result2',result);
         expect(result).toEqual(expected);
 
     });
+    
     it("add Entries after lock", () => {
         const expected = [];
         mySecretDiary.lockDiary();
